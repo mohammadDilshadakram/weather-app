@@ -1,0 +1,180 @@
+<!DOCTYpE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Weather</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cities
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+    <div class="container">
+        <div class="current-info">
+
+            <div class="date-container">
+                <div class="time" id="time">
+                    12:30 <span id="am-pm">Pm</span>
+                </div>
+                <div class="date" id="date">
+                    Monday, 24 May
+                </div>
+
+                <div class="others" id="current-weather-items">
+                  <div class="weather-item"><div >Temp</div>
+                  <div ><span id="Temperature"> </span></div></div>
+
+                  <div class="weather-item"><div >Humidity</div>
+                  <div ><span id="humidity"></span></div></div>
+
+                  <div class="weather-item"><div >Feels like</div>
+                  <div ><span id="feels_like"></span></div></div>
+
+                  <div class="weather-item"><div >Wind Speed</div>
+                  <div ><span id="wind_speed"></span></div></div>
+                  
+                    
+                </div>
+            </div>
+            <div class="place-container">
+                
+                <h1 class="country"><span id="cityName"></span></h1>
+            </div>
+
+        </div>
+
+        
+    </div>
+    <div class="future-forecast">
+      <!-- <div class="week"><p>Data of this week</p></div> -->
+      
+        <div class="today" id="current-temp">
+           
+
+           
+           
+        </div>
+
+
+        <div class="weather-forecast" id="weather-forecast">
+          
+          <div class="weather-forecast-item">
+            <div class="day">Monday</div>
+            <div class="temp1">Night-26.5&#176; C</div>
+            <div class="temp">Day-35.5&#176; C</div>
+          </div>
+
+
+
+
+           <div class="weather-forecast-item">
+               <div class="day">Tuesday</div>
+               <div class="temp1">Night-24.5&#176; c</div>
+               <div class="temp">Day-37.5&#176; c</div>
+           </div>
+
+
+
+           <div class="weather-forecast-item">
+               <div class="day">Wednesday</div>
+               
+              
+               <div class="temp1">Night-26.5&#176; c</div>
+               <div class="temp">Day-34.5&#176; c</div>
+           </div>
+           <div class="weather-forecast-item">
+               <div class="day">Thursday</div>
+               
+               
+               <div class="temp1">Night-27.5&#176; c</div>
+               <div class="temp">Day-36.5&#176; c</div>
+           </div>
+           <div class="weather-forecast-item">
+               <div class="day">Friday</div>
+               
+               
+               <div class="temp1">Night-24.5&#176; c</div>
+               <div class="temp">Day-32.5&#176; c</div>
+           </div>
+
+           <footer class="footer"> 
+            <p>All rights reserved to
+            <a href="mddilshadakram123@gmail.com">mddilshadakram123@gmail.com</a></p>
+          </footer>
+
+          
+        </div>
+       
+       
+
+
+        
+
+
+
+       </div>
+
+    
+
+
+
+       
+
+
+
+
+
+    
+    
+      
+    </body>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</html>
